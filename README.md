@@ -3,5 +3,7 @@
 Homebrew Formulae to @goreleaser binaries, powered by @goreleaser
 
 ```sh
-brew install moonkracker/tap/moonkracker
+brew tap moonkracker/tap
+# bsuir-schedule
+brew install bsuir-schedule
 ```
