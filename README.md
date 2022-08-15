@@ -1,0 +1,1 @@
+# homebrew-bsuir-schedule
