@@ -9,16 +9,16 @@ class BsuirSchedule < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "d6f780bfd496ff4e6aa7739a06dd98abd0ff2f74e0128c5aac2f4c0382943ae2"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ce5b655cb0a960c2835fb06a49fe4a0f13053882d8974733243bfdd19668d569"
 
       def install
         bin.install "bsuir-schedule"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "07f6a4f0d89f71c2daaa364302ecc5c202791ba8e211f2ce41fe3e056d6020cf"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "948ce8981dc82d7f1a59893cb881b12096376ad377f72cc4070bcd2c4332ad58"
 
       def install
         bin.install "bsuir-schedule"
@@ -28,16 +28,16 @@ class BsuirSchedule < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_linux_arm64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "64579768fa8fd1a8580f991cb129462ed9863cfa38fbd5819597f9dc7b6b5286"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "103e7874fc53b267eca35f49162ebaedb813b265cebc40ed76fec3b0073a055a"
 
       def install
         bin.install "bsuir-schedule"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "bae767059050d8b6ea489d2261d3d8b94dc47f91d91d5cbf680c4fe2ff18cc5d"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.1-prerelease/bsuir-schedule_0.0.1-prerelease_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4a0afa8e7fe83378d238e3f3a50fcc7838affdc647adc4b71795585325ed5663"
 
       def install
         bin.install "bsuir-schedule"
