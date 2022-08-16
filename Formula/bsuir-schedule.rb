@@ -10,7 +10,7 @@ class BsuirSchedule < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_darwin_arm64.tar.gz"
-      sha256 "f23877b6831433000e4d6a4231a881b22e2ef2415b0fe91b8f4949ad1c5d5e09"
+      sha256 "7a0dd7eead5bb0eefab56b90e68d9f6fa649ccaba82407f909db1754b4207b81"
 
       def install
         bin.install "bsuir-schedule"
@@ -18,7 +18,7 @@ class BsuirSchedule < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_darwin_amd64.tar.gz"
-      sha256 "7356c921d371b267019805e03b4a48c3cb099c6b22ae36cc3a4a966d22591df7"
+      sha256 "a804999b25db5a1c4772a736d2825923b2d2e1751e8e6a47f0fad514a80e1e9d"
 
       def install
         bin.install "bsuir-schedule"
@@ -27,17 +27,17 @@ class BsuirSchedule < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_arm64.tar.gz"
-      sha256 "ac2429612f76a73146bfbf9df5da52100af28d385a04db1ef2d1ce845bb2fc74"
+    if Hardware::CPU.intel?
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_amd64.tar.gz"
+      sha256 "bef363f081ecf3b5b1b165da0c683609472a64693dce777601e076c8cb0b0827"
 
       def install
         bin.install "bsuir-schedule"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_amd64.tar.gz"
-      sha256 "754cc50dd8c1728d957b0655ed72035d2460884749dd95e82cd5530679f9f05e"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_arm64.tar.gz"
+      sha256 "83582d09ff5a153ab7dbd3c6d23079c795e96111041874e2a8616a6591939a7f"
 
       def install
         bin.install "bsuir-schedule"
