@@ -5,20 +5,20 @@
 class BsuirSchedule < Formula
   desc "Get BSUIR schedule"
   homepage ""
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_darwin_arm64.tar.gz"
-      sha256 "7a0dd7eead5bb0eefab56b90e68d9f6fa649ccaba82407f909db1754b4207b81"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_darwin_arm64.tar.gz"
+      sha256 "b277701a754d8f2d282c169ed05e4bbe4a3a3558816f095ca44a5bdfd9b46b7f"
 
       def install
         bin.install "bsuir-schedule"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_darwin_amd64.tar.gz"
-      sha256 "a804999b25db5a1c4772a736d2825923b2d2e1751e8e6a47f0fad514a80e1e9d"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_darwin_amd64.tar.gz"
+      sha256 "df9fc3d8445cef75a44d2f77334e5a4558b2059b96ed9d7d2c966b92b47d7954"
 
       def install
         bin.install "bsuir-schedule"
@@ -28,16 +28,16 @@ class BsuirSchedule < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_amd64.tar.gz"
-      sha256 "bef363f081ecf3b5b1b165da0c683609472a64693dce777601e076c8cb0b0827"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_linux_amd64.tar.gz"
+      sha256 "62842726c6c93a21e4f468c0bd81ae88340af059fa799fd2217b0ed16b3a59b2"
 
       def install
         bin.install "bsuir-schedule"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.2/bsuir-schedule_0.0.2_linux_arm64.tar.gz"
-      sha256 "83582d09ff5a153ab7dbd3c6d23079c795e96111041874e2a8616a6591939a7f"
+      url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_linux_arm64.tar.gz"
+      sha256 "7c12a99eb6af1c403433cbda54e67e6d31984aacc6e1d1db6849bdf837b3d019"
 
       def install
         bin.install "bsuir-schedule"
