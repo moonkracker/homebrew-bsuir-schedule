@@ -10,7 +10,7 @@ class BsuirSchedule < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_darwin_arm64.tar.gz"
-      sha256 "b277701a754d8f2d282c169ed05e4bbe4a3a3558816f095ca44a5bdfd9b46b7f"
+      sha256 "1676d4b6e067a9f794af799bfd7ef63774662d86ce58a5494e1952eb1e0fffa8"
 
       def install
         bin.install "bsuir-schedule"
@@ -18,7 +18,7 @@ class BsuirSchedule < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_darwin_amd64.tar.gz"
-      sha256 "df9fc3d8445cef75a44d2f77334e5a4558b2059b96ed9d7d2c966b92b47d7954"
+      sha256 "cd5e05908261423bc7c71a1c3b41ba50698ef621a557696d0aeeef7a37956491"
 
       def install
         bin.install "bsuir-schedule"
@@ -29,7 +29,7 @@ class BsuirSchedule < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_linux_amd64.tar.gz"
-      sha256 "62842726c6c93a21e4f468c0bd81ae88340af059fa799fd2217b0ed16b3a59b2"
+      sha256 "6004ee122f8bf173e026eef023816975df6d96f4c2b2e5ad844ab346b139ea14"
 
       def install
         bin.install "bsuir-schedule"
@@ -37,7 +37,7 @@ class BsuirSchedule < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/moonkracker/bsuir-schedule/releases/download/v0.0.3/bsuir-schedule_0.0.3_linux_arm64.tar.gz"
-      sha256 "7c12a99eb6af1c403433cbda54e67e6d31984aacc6e1d1db6849bdf837b3d019"
+      sha256 "4798d0bc6547f4b8a997876aaa7fae4159afdf0b48e70e920eb89ab029482b78"
 
       def install
         bin.install "bsuir-schedule"
